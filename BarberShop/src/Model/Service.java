@@ -21,7 +21,7 @@ public class Service {
         this.description = description;
         this.value = value;
     }
-    /*getter and setter, getter retorna o valro da variavel e setter 
+    /*getter and setter, getter retorna o valor da variavel e setter 
     define ou atualiza*//*acessar dados de fora*/
     public String getDescription() {
         return description;

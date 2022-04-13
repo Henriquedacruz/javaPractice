@@ -24,11 +24,12 @@ public class Main {
         System.out.println(corte.getDescription());
         System.out.println(corte.getValue());
         
-        Client Cliente = new Client(1, "thiago", 'M', "40028922", "rua testa 980");
-        System.out.println(Cliente);
+        Client Cliente = new Client(1, "Antonio", "rua noxus", "4666-9798");
+        System.out.println(Cliente.getName());
         
-        User usuario = new User(1,"barbeiro", "senha");
-        System.out.println(usuario);
+        User usuario = new User(1, "barbeiro", "senha");
+        System.out.println(usuario.getName());
+        
     }
     
 }
