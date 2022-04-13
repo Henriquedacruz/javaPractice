@@ -4,17 +4,26 @@
  */
 package View;
 
+import Controller.LoginController;
+import javax.swing.JOptionPane;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+
 /**
  *
  * @author henrique
  */
 public class Login extends javax.swing.JFrame {
 
+    private final LoginController controller;
+    public Object getTextUser;
+
     /**
      * Creates new form Login
      */
     public Login() {
         initComponents();
+        controller = new LoginController(this);
     }
 
     /**
@@ -28,7 +37,7 @@ public class Login extends javax.swing.JFrame {
 
         TextPassword = new javax.swing.JPasswordField();
         TextUser = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        jButtonLogin = new javax.swing.JButton();
         jLabelPassword = new javax.swing.JLabel();
         jLabelUser = new javax.swing.JLabel();
         jLabelLogin = new javax.swing.JLabel();
@@ -40,13 +49,13 @@ public class Login extends javax.swing.JFrame {
         getContentPane().add(TextPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 540, 190, -1));
         getContentPane().add(TextUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 460, 230, -1));
 
-        jButton1.setText("Entrar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jButtonLogin.setText("Entrar");
+        jButtonLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jButtonLoginActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 610, 150, -1));
+        getContentPane().add(jButtonLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 610, 150, -1));
 
         jLabelPassword.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabelPassword.setForeground(new java.awt.Color(255, 255, 255));
@@ -72,9 +81,9 @@ public class Login extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void jButtonLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLoginActionPerformed
+      controller.FizTarefa();
+    }//GEN-LAST:event_jButtonLoginActionPerformed
 
     /**
      * @param args the command line arguments
@@ -115,10 +124,32 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel JLabelBackground;
     private javax.swing.JPasswordField TextPassword;
     private javax.swing.JTextField TextUser;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButtonLogin;
     private javax.swing.JLabel jLabelLogin;
     private javax.swing.JLabel jLabelPassword;
     private javax.swing.JLabel jLabelUser;
     private javax.swing.JLabel jLabelWindow;
     // End of variables declaration//GEN-END:variables
+
+    public void exibeMensagem(String mensagem) {
+        JOptionPane.showMessageDialog(null, mensagem);
+    }
+
+    public JPasswordField getTextPassword() {
+        return TextPassword;
+    }
+
+    public void setTextPassword(JPasswordField TextPassword) {
+        this.TextPassword = TextPassword;
+    }
+
+    public JTextField getTextUser() {
+        return TextUser;
+    }
+
+    public void setTextUser(JTextField TextUser) {
+        this.TextUser = TextUser;
+    }
+    
+    
 }

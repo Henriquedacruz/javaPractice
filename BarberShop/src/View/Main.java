@@ -33,7 +33,7 @@ public class Main {
         
         
         Scheduling agendamento = new Scheduling(1, Cliente, servico, 25, "14/04/2022 08:30");
-        System.out.println(agendamento.getCliente().getName());    
+        System.out.println(agendamento.getCliente());    
 }
     
 }
