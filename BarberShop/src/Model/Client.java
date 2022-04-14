@@ -3,8 +3,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Model;
-/*importar classe para usar Date*/
+
 import java.util.Date;
+
+/*importar classe para usar Date*/
 
 /**
  *
@@ -16,8 +18,8 @@ public class Client extends People {
     private String address;
     private String cep;
 
-    public Client(String address, String cep, int id, String name, char gender, Date birthdate, String phonenumber, String email, String rg) {
-        super(id, name, gender, birthdate, phonenumber, email, rg);
+    public Client(int id, String name, char gender, String birthdate, String phonenumber, String email, String rg, String password, String accesslevel ) {
+        super (id, name, gender, birthdate, phonenumber, email, rg);
         this.address = address;
         this.cep = cep;
     }
@@ -28,9 +30,6 @@ public class Client extends People {
         this.cep = cep;
     }
 
-    
-    
-    
     public String getAddress() {
         return address;
     }

@@ -20,12 +20,12 @@ public class User extends People {
         this.password = password;
     }
 
-    public User(String accesslevel, String password, int id, String name, char gender, Date birthdate, String phonenumber, String email, String rg) {
+    public User(int id, String name, char gender, String birthdate, String phonenumber, String email, String rg, String password, String accesslevel ) {
         super(id, name, gender, birthdate, phonenumber, email, rg);
         this.accesslevel = accesslevel;
         this.password = password;
     }
-
+    
     public String getAccesslevel() {
         return accesslevel;
     }
