@@ -1,5 +1,5 @@
 # javaPractice
- java projects available on youtube that I reproduced to practice
+ java projects available on youtube that I reproduced to practice, making some changes.
 
 
 available channel: While True.
