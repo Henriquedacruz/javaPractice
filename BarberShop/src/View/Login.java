@@ -17,6 +17,8 @@ import javax.swing.JTextField;
 public class Login extends javax.swing.JFrame {
 
     private final LoginController controller;
+
+   /* private final LoginController controller;
     public Object getTextUser;
 
     /**
@@ -24,8 +26,8 @@ public class Login extends javax.swing.JFrame {
      */
     public Login() {
         initComponents();
-        controller = new LoginController(this);
-        Banco.inicia();
+       controller = new LoginController(this);
+       Banco.inicia();
     }
 
     /**
@@ -46,7 +48,7 @@ public class Login extends javax.swing.JFrame {
         jLabelWindow = new javax.swing.JLabel();
         JLabelBackground = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         getContentPane().add(TextPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 540, 190, -1));
         getContentPane().add(TextUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 460, 230, -1));
@@ -117,8 +119,8 @@ public class Login extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Login().setVisible(true);
-            }
+              new Login().setVisible(true);
+          }
         });
     }
 

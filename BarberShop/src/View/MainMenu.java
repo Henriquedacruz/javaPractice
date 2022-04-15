@@ -4,17 +4,22 @@
  */
 package View;
 
+import Controller.MainMenuController;
+
 /**
  *
  * @author henrique
  */
 public class MainMenu extends javax.swing.JFrame {
 
+    private final MainMenuController controller;
+
     /**
      * Creates new form MainMenu
      */
     public MainMenu() {
         initComponents();
+        this.controller = new MainMenuController(this);
     }
 
     /**
@@ -70,6 +75,11 @@ public class MainMenu extends javax.swing.JFrame {
         jMenuOperation.setText("Operação");
 
         jMenuItem4.setText("Agenda");
+        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem4ActionPerformed(evt);
+            }
+        });
         jMenuOperation.add(jMenuItem4);
 
         jMenuBar1.add(jMenuOperation);
@@ -89,6 +99,10 @@ public class MainMenu extends javax.swing.JFrame {
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+       this.controller.navegarParaAgenda();
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     /**
      * @param args the command line arguments
