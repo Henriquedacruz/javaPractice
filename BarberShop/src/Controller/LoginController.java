@@ -5,8 +5,10 @@
 package Controller;
 
 import Controller.Helper.LoginHelper;
+import Model.DAO.UsuarioDAO;
 import Model.User;
 import View.Login;
+import View.MainMenu;
 
 /**
  *
@@ -25,10 +27,17 @@ public class LoginController {
     public void LoginSystem(){
         //usando loginhelper no controller
         User usuario = helper.obterModelo();
-        
+        UsuarioDAO usuarioDAO = new UsuarioDAO();
+        User usuarioAutenticado = usuarioDAO.selectPorNomeESenha(usuario);
+        this.view.dispose();
+        if(usuarioAutenticado != null){
+            MainMenu menu = new MainMenu();
+            menu.setVisible(true);
+    }else{
+            view.exibeMensagem("Usuario ou senha invalidos");
+        }
+    
     }
-    
-    
      public void FizTarefa(){
          System.out.println("GOTCHA");
          

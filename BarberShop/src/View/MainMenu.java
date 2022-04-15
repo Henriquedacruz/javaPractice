@@ -31,7 +31,10 @@ public class MainMenu extends javax.swing.JFrame {
         jMenuRegister = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
         jMenuOperation = new javax.swing.JMenu();
+        jMenuItem4 = new javax.swing.JMenuItem();
+        jMenuReport = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -54,10 +57,25 @@ public class MainMenu extends javax.swing.JFrame {
         jMenuItem2.setText("Serviço");
         jMenuRegister.add(jMenuItem2);
 
+        jMenuItem3.setText("Usuario");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
+        jMenuRegister.add(jMenuItem3);
+
         jMenuBar1.add(jMenuRegister);
 
         jMenuOperation.setText("Operação");
+
+        jMenuItem4.setText("Agenda");
+        jMenuOperation.add(jMenuItem4);
+
         jMenuBar1.add(jMenuOperation);
+
+        jMenuReport.setText("Relatório");
+        jMenuBar1.add(jMenuReport);
 
         setJMenuBar(jMenuBar1);
 
@@ -67,6 +85,10 @@ public class MainMenu extends javax.swing.JFrame {
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -108,7 +130,10 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenu jMenuOperation;
     private javax.swing.JMenu jMenuRegister;
+    private javax.swing.JMenu jMenuReport;
     // End of variables declaration//GEN-END:variables
 }

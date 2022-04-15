@@ -35,7 +35,7 @@ abstract public class People {
         this.name = name;
         this.gender = gender;
         try {
-            this.birthdate = new SimpleDateFormat("dd/MM/yyyy HH:mm").parse(birthdate);
+            this.birthdate = new SimpleDateFormat("dd/MM/yyyy").parse(birthdate);
         } catch (ParseException ex) {
             Logger.getLogger(People.class.getName()).log(Level.SEVERE, null, ex);
         }
