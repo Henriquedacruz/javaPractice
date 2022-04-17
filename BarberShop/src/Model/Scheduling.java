@@ -58,6 +58,13 @@ public class Scheduling {
     public Date getData() {
         return data;
     }
+    public String getDataFormatada(){
+        return new SimpleDateFormat("dd/MM/yyyy").format(data);
+    }
+    
+    public String getHoraFormatada(){
+        return new SimpleDateFormat("HH:mm").format(data);
+    }
 
     public String getDescription() {
         return description;

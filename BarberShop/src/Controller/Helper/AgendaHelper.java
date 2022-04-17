@@ -32,11 +32,10 @@ public class AgendaHelper {
                 
                 agendamento.getId(),
                 agendamento.getCliente().getName(),
-                agendamento.getServico(),
-                agendamento.getDescription(),
+                agendamento.getServico().getDescription(),
                 agendamento.getValue(),
-                agendamento.getData(),
-                agendamento.getData()                
+                agendamento.getDataFormatada(),
+                agendamento.getHoraFormatada()                
             });
         }
     }
