@@ -5,6 +5,7 @@
 package View;
 
 import Controller.AgendaController;
+import javax.swing.JTable;
 
 /**
  *
@@ -20,6 +21,7 @@ public class Agenda extends javax.swing.JFrame {
     public Agenda() {
         initComponents();
         controller = new AgendaController(this);
+        iniciar();
     }
 
     /**
@@ -88,13 +90,10 @@ public class Agenda extends javax.swing.JFrame {
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null}
+
             },
             new String [] {
-                "id", "Cliente", "Serviço", "Valor", "Data", "Hora", "Observação"
+                "ID", "Cliente", "Serviço", "Valor", "Data", "Hora"
             }
         ));
         jScrollPane2.setViewportView(jTable1);
@@ -270,4 +269,18 @@ public class Agenda extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField5;
     private javax.swing.JToggleButton jToggleButton1;
     // End of variables declaration//GEN-END:variables
+
+    private void iniciar() {
+        this.controller.atualizaTabela();
+    }
+
+    public JTable getjTable1() {
+        return jTable1;
+    }
+
+    public void setjTable1(JTable jTable1) {
+        this.jTable1 = jTable1;
+    }
+    
+    
 }
