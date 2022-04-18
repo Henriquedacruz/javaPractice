@@ -13,8 +13,7 @@ import java.util.ArrayList;
  * @author tiago
  */
 public class ClienteDAO {
-    
-    
+
     /**
      * Insere um cliente dentro do banco de dados
      * @param cliente exige que seja passado um objeto do tipo cliente

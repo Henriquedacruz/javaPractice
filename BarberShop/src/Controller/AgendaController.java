@@ -39,7 +39,13 @@ public class AgendaController {
     
     public void atualizaCliente(){
         ClienteDAO clienteDAO = new ClienteDAO();
-        ClienteDAO.select();
+        clienteDAO.selectAll();
         ArrayList<Client> clientes = clienteDAO.selectAll();
+        
+        helper.preencherClientes(clientes);
+    }
+    
+    public void atualizaServico(){
+        
     }
 }
