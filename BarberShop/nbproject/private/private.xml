@@ -3,15 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/xjde9/Documents/GitHub/javaPractice/javaPractice/BarberShop/src/Controller/AgendaController.java</file>
+            <file>file:/C:/Users/xjde9/Documents/GitHub/javaPractice/javaPractice/BarberShop/src/Controller/Helper/AgendaHelper.java</file>
+            <file>file:/C:/Users/xjde9/Documents/GitHub/javaPractice/javaPractice/BarberShop/src/Model/DAO/ServicoDAO.java</file>
             <file>file:/C:/Users/xjde9/Documents/GitHub/javaPractice/javaPractice/BarberShop/src/View/Agenda.java</file>
-            <file>file:/C:/Users/xjde9/Documents/GitHub/javaPractice/javaPractice/BarberShop/src/View/MainMenu.java</file>
-            <file>file:/C:/Users/xjde9/Documents/GitHub/javaPractice/javaPractice/BarberShop/src/Controller/MainMenuController.java</file>
-            <file>file:/C:/Users/xjde9/Documents/GitHub/javaPractice/javaPractice/BarberShop/src/View/Login.java</file>
+            <file>file:/C:/Users/xjde9/Documents/GitHub/javaPractice/javaPractice/BarberShop/src/Model/Scheduling.java</file>
             <file>file:/C:/Users/xjde9/Documents/GitHub/javaPractice/javaPractice/BarberShop/src/View/Main.java</file>
-            <file>file:/C:/Users/xjde9/Documents/GitHub/javaPractice/javaPractice/BarberShop/src/Controller/Helper/LoginHelper.java</file>
-            <file>file:/C:/Users/xjde9/Documents/GitHub/javaPractice/javaPractice/BarberShop/src/Model/DAO/Banco.java</file>
-            <file>file:/C:/Users/xjde9/Documents/GitHub/javaPractice/javaPractice/BarberShop/src/Model/DAO/UsuarioDAO.java</file>
-            <file>file:/C:/Users/xjde9/Documents/GitHub/javaPractice/javaPractice/BarberShop/src/Controller/LoginController.java</file>
         </group>
     </open-files>
 </project-private>
