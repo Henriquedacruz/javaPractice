@@ -47,4 +47,8 @@ public class Service {
         this.id = id;
     }
     
+    @Override
+    public String toString(){
+        return getDescription();
+    }
 }
