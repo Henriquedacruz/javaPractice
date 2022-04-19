@@ -21,7 +21,7 @@ public class Scheduling {
     private Service servico;
     private float value;
     private Date data;
-    private String description;
+    
 
     public Scheduling(int id, Client cliente, Service servico, float value, String data) {
         this.id = id;
@@ -34,11 +34,7 @@ public class Scheduling {
             Logger.getLogger(Scheduling.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-
-    public Scheduling() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
+    
     public int getId() {
         return id;
     }
@@ -66,16 +62,12 @@ public class Scheduling {
         return new SimpleDateFormat("HH:mm").format(data);
     }
 
-    public String getDescription() {
-        return description;
-    }
-
     public void setId(int id) {
         this.id = id;
     }
 
     public void setVisible(boolean b) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        throw new UnsupportedOperationException("Not supported yet."); 
     }
 
    
