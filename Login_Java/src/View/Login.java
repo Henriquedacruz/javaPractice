@@ -97,7 +97,8 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonLoginActionPerformed
 
     private void jButtonLogin1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLogin1ActionPerformed
-        // TODO add your handling code here:
+       Cadastro cadastro = new Cadastro();
+       cadastro.setVisible(true);
     }//GEN-LAST:event_jButtonLogin1ActionPerformed
 
     private void jButtonLogin2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLogin2ActionPerformed
