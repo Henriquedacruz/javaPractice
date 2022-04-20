@@ -4,6 +4,12 @@
  */
 package View;
 
+import DAO.Conexao;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.PreparedStatement;
+import java.sql.Statement;
 /**
  *
  * @author henrique
@@ -61,6 +67,11 @@ public class Cadastro extends javax.swing.JFrame {
         jLabel3.setText("Senha");
 
         jButton1.setText("Cadastrar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -117,6 +128,23 @@ public class Cadastro extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField3ActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        
+        try {
+            Connection conexao = (Connection) new Conexao().getConnection();
+            
+            String sql = "insert into usuario (nome,senha) values('antonio'),'654321')";
+            
+           PreparedStatement statement = conexao.prepareStatement(sql);
+           statement.execute();
+           
+           conexao.close();
+            
+        } catch (SQLException ex) {
+            java.util.logging.Logger.getLogger(Cadastro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jButton1ActionPerformed
+    
     /**
      * @param args the command line arguments
      */
