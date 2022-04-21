@@ -134,7 +134,7 @@ public class Cadastro extends javax.swing.JFrame {
         try {
             Connection conexao = (Connection) new Conexao().getConnection();
             
-            String sql = "insert into usuario (nome,senha) values('antonio'),'654321')";
+            String sql = "insert into usuario(nome,senha) values('antonio'),('654321'); ";
             
            PreparedStatement statement = conexao.prepareStatement(sql);
            statement.execute();
