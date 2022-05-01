@@ -42,6 +42,11 @@ public class Cadastro extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentHidden(java.awt.event.ComponentEvent evt) {
+                formComponentHidden(evt);
+            }
+        });
 
         jLabel1.setText("ID");
 
@@ -145,6 +150,10 @@ public class Cadastro extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Cadastro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void formComponentHidden(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentHidden
+        // TODO add your handling code here:
+    }//GEN-LAST:event_formComponentHidden
     
     /**
      * @param args the command line arguments
