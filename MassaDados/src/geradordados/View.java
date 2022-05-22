@@ -442,7 +442,7 @@ public String local[] = new String[26];      // Variavel com nomes de ruas
        
        jTextField6.setText(rg);   
  
-//                                CPF
+//CPF
 
        String cpf = "";
        
